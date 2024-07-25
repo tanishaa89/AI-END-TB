@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="mr"> <!-- Change lang attribute to 'mr' for Marathi -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>रुग्णांची माहिती</title> <!-- Title changed to Marathi -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../static/css/patientdetails.css">
+  
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="../static/images/user.png">
+          <span class="nav-item">डॅशबोर्ड</span> <!-- Dashboard translated to Marathi -->
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-user-injured"></i>
+          <span class="nav-item">रुग्ण</span> <!-- Patients translated to Marathi -->
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-file-medical-alt"></i>
+          <span class="nav-item">वैद्यकीय नोंदी</span> <!-- Medical Records translated to Marathi -->
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-notes-medical"></i>
+          <span class="nav-item">प्रिस्क्रिप्शन</span> <!-- Prescriptions translated to Marathi -->
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-calendar-alt"></i>
+          <span class="nav-item">अपॉईंटमेंट्स</span> <!-- Appointments translated to Marathi -->
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">सेटिंग्ज</span> <!-- Settings translated to Marathi -->
+        </a></li>
+      </ul>
+    </nav>
+    <section class="main">
+      <div class="main-top">
+        <h1>रुग्णांची माहिती</h1> <!-- Patient Details translated to Marathi -->
+        <i class="fas fa-user-cog"></i>
+      </div>
+      <div class="patients">
+        <div class="card" id="patientCard">
+          <!-- Patient details will be dynamically inserted here -->
+        </div>
+        <button onclick="performTbScreening()">टीबी स्क्रीनिंग</button> <!-- TB Screening translated to Marathi -->
+        <button onclick="performForm2()">फॉर्म 2</button> <!-- Form 2 translated to Marathi -->
+        <button onclick="performForm3()">फॉर्म 3</button> <!-- Form 3 translated to Marathi -->
+        <button onclick="performForm4()">फॉर्म 4</button> <!-- Form 4 translated to Marathi -->
+        <button onclick="performForm5()">फॉर्म 5</button> <!-- Form 5 translated to Marathi -->
+      </div>
+    </section>
+  </div>
+  <script src="../static/js/patient_details.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+
+    /*  import google fonts */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    *{
+      margin: 0;
+      padding: 0;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body{
+      background: rgb(255, 254, 254);
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      height: 100vh;
+      right: 0; /* Move menu to the right */
+      width: 90px;
+      background: #fff;
+      overflow: hidden;
+      transition: 1s;
+    }
+    nav:hover{
+      width: 280px;
+      transition: 1s;
+    }
+    .logo{
+      text-align: center;
+      display: flex;
+      margin: 10px 0 0 10px;
+      padding-bottom: 3rem;
+    }
+    .logo img{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .logo span{
+      font-weight: bold;
+      padding-left: 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    a{
+      position: relative;
+      width: 280px;
+      font-size: 14px;
+      color: rgb(85, 83, 83);
+      display: table;
+      padding: 10px;
+    }
+    nav .fas{
+      position: relative;
+      width: 70px;
+      height: 40px;
+      top: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .nav-item{
+      position: relative;
+      top: 12px;
+      margin-left: 10px;
+      font-size: 15px;
+    }
+    .nav-item:hover{
+      color: #FF4F5B;
+    }
+    a:hover{
+      background: #eee;
+    }
+    a:hover i{
+      color: #FF4F5B;
+      transition: 0.5s;
+    }
+    .logout{
+      position: absolute;
+      bottom: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: flex-end; /* Align container content to the right */
+      margin-right: 10px; /* Add some margin to keep the content away from the edge */
+    }
+    /* MAin Section */
+    .main{
+      position: relative;
+      padding: 20px;
+      width: 100%;
+    }
+    .main-top {
+      display: flex;
+      justify-content: center; /* Center the title horizontally */
+    }
+    .main-top h1 {
+      margin-bottom: 20px; /* Add spacing */
+    }
+    .main-top i{
+      position: absolute;
+      right: 0;
+      margin: 10px 30px;
+      color: rgb(110, 109, 109);
+      cursor: pointer;
+    }
+    .patients .card {
+      flex: 1; /* Make the card flex item */
+      margin: 10px;
+      background: #fff;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+      display: flex; /* Use flexbox */
+      flex-direction: column; /* Stack elements vertically */
+    }
+    .patients .card h4 {
+      text-transform: uppercase;
+      margin-bottom: 10px; /* Adjust spacing */
+    }
+    .patients .card p {
+      font-size: 12px;
+      margin-bottom: 5px; /* Adjust spacing */
+    }
+    .patients button {
+        width: 100%;
+        margin-top: auto; /* Push button to the bottom */
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 10px;
+        background: transparent;
+        border: 1px solid #FF4F5B;
+        margin-top: 10px; /* Add margin between buttons */
+      }
+
+      .patients button:hover {
+        background: #FF4F5B;
+        color: #fff;
+        transition: 0.5s;
+      }
+
+    /* Scroll bar styles */
+    html::-webkit-scrollbar {
+      width: 1.3rem;
+    }
+    html::-webkit-scrollbar-track {
+      background: #000;
+    }
+    html::-webkit-scrollbar-thumb {
+      background: #FF4F5B;
+    }
+  

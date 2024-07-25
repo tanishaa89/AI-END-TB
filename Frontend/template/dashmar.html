@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>रुग्ण डॅशबोर्ड</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="../static/css/dash.css">
+
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="../static/images/user.png">
+          <span class="nav-item">डॅशबोर्ड</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-user-injured"></i>
+          <span class="nav-item">रुग्ण</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-file-medical-alt"></i>
+          <span class="nav-item">मेडिकल रेकॉर्ड्स</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-notes-medical"></i>
+          <span class="nav-item">प्रिस्क्रिप्शन्स</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-calendar-alt"></i>
+          <span class="nav-item">अपॉइंटमेंट्स</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">सेटिंग्स</span>
+        </a></li>
+      </ul>
+    </nav>
+    <section class="main">
+      <div class="main-top">
+        <h1>रुग्ण</h1>
+        <i class="fas fa-user-cog"></i>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="रुग्ण शोधा...">
+        <button onclick="searchPatients()"><i class="fas fa-search"></i></button>
+      </div>
+      <button class="btn" onclick="addPatient()">नवीन रुग्ण जोडा</button> <!-- Added button to add a patient -->
+      <div class="patients">
+        <div class="card">
+          <h4>जॉन डो</h4>
+          <p>वय: ४५</p>
+          <p>लिंग: पुरुष</p>
+        
+          <button onclick="viewDetails('जॉन डो', 45, 'पुरुष')">माहिती</button>
+          <button onclick="performTbScreening()">टीबी स्क्रीनिंग</button>
+          <button onclick="viewSurveyForms('जॉन डो', 45, 'पुरुष')">सर्वेक्षण फॉर्म्स</button>
+
+        </div>
+        <div class="card">
+          <h4>जेन स्मिथ</h4>
+          <p>वय: ३२</p>
+          <p>लिंग: महिला</p>
+          
+          <button onclick="viewDetails('जेन स्मिथ', 32, 'महिला')">माहिती</button>
+          <button onclick="performTbScreening()">टीबी स्क्रीनिंग</button>
+          <button onclick="viewSurveyForms('जेन स्मिथ', 32, 'महिला')">सर्वेक्षण फॉर्म्स</button>
+
+        </div>
+        <div class="card">
+          <h4>मायकेल जॉनसन</h4>
+          <p>वय: ५८</p>
+          <p>लिंग: पुरुष</p>
+        
+          <button onclick="viewDetails('मायकल जॉन्सन', 58, 'पुरुष')">माहिती</button>
+          <button onclick="performTbScreening()">टीबी स्क्रीनिंग</button>
+          <button onclick="viewSurveyForms('मायकल जॉन्सन', 58, 'पुरुष')">सर्वेक्षण फॉर्म्स</button>
+ 
+        </div>
+        <div class="card">
+          <h4>एमिली विल्सन</h4>
+          <p>वय: २५</p>
+          <p>लिंग: महिला</p>
+          
+          <button onclick="viewDetails('एमिली विल्सन', 25, 'स्त्री')">माहिती</button>
+          <button onclick="performTbScreening()">टीबी स्क्रीनिंग</button>
+          <button onclick="viewSurveyForms('एमिली विल्सन', 25, 'स्त्री')">सर्वेक्षण फॉर्म्स</button>
+
+        </div>
+      </div>
+    </section>
+  </div>
+ 
+  <script src="../static/js/dash.js"></script>
+</body>
+</html>

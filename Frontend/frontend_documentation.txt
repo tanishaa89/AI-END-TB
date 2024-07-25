@@ -1,0 +1,28 @@
+STREAMLIT_CHATBOT
+│
+├──Frontend
+   ├── main.py
+   ├── data
+   ├── json
+   ├── templates/
+   │   ├── loginmarr.html
+   │   └── ...
+   └── static/
+       ├── css/
+       |  ├── login.css
+       |  └── ...
+       ├── js/
+       |  ├── login.js
+       |  └── ...
+       └── images/
+
+#HTML files
+1.loginmarr - login + sign up page
+2.indexmar - home page
+3.dashmar - dashboard 
+4.tbformmar - tb screening survey form
+5.form2,3,4,5 - for other survey forms
+6.patient_detailsmar - basic details like age,name shown
+7.patientformmar - registration form of patients taking basic info.
+
+

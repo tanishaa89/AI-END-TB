@@ -1,0 +1,275 @@
+
+    /*  import google fonts */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    *{
+      margin: 0;
+      padding: 0;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body{
+      background: rgb(255, 254, 254);
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        right: 0; /* Move menu to the right */
+        width: 90px;
+        background: #fff;
+        overflow: hidden;
+        transition: 1s;
+      }
+    
+      
+      
+    nav:hover{
+      width: 280px;
+      transition: 1s;
+    }
+    .logo{
+      text-align: center;
+      display: flex;
+      margin: 10px 0 0 10px;
+      padding-bottom: 3rem;
+    }
+
+    .logo img{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .logo span{
+      font-weight: bold;
+      padding-left: 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+   
+    logo span:hover{
+        color: #FF4F5B;
+    }
+    a{
+      position: relative;
+      width: 280px;
+      font-size: 14px;
+      color: rgb(85, 83, 83);
+      display: table;
+      padding: 10px;
+    }
+    nav .fas{
+      position: relative;
+      width: 70px;
+      height: 40px;
+      top: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .nav-item{
+      position: relative;
+      top: 12px;
+      margin-left: 10px;
+      font-size: 15px;
+    }
+    .nav-item:hover{
+        color: #FF4F5B;
+    }
+    a:hover{
+      background: #eee;
+    }
+    a:hover i{
+      color: #FF4F5B;
+      transition: 0.5s;
+    }
+    .logout{
+      position: absolute;
+      bottom: 0;
+    }
+
+
+    .container {
+      display: flex;
+      justify-content: flex-end; /* Align container content to the right */
+      margin-right: 10px; /* Add some margin to keep the content away from the edge */
+    }
+
+
+    /* MAin Section */
+    .main{
+      position: relative;
+      padding: 20px;
+      width: 100%;
+    }
+    .main-top {
+        display: flex;
+        justify-content: center; /* Center the title horizontally */
+      }
+      
+      .main-top h1 {
+        margin-bottom: 20px; /* Add spacing */
+      }
+    .main-top i{
+      position: absolute;
+      right: 0;
+      margin: 10px 30px;
+      color: rgb(110, 109, 109);
+      cursor: pointer;
+    }
+    .main .patients{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .patients .card {
+        flex: 1; /* Make the card flex item */
+        margin: 10px;
+        background: #fff;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Stack elements vertically */
+      }
+
+      .patients .card h4 {
+        text-transform: uppercase;
+        margin-bottom: 10px; /* Adjust spacing */
+      }
+
+      .patients .card p {
+        font-size: 12px;
+        margin-bottom: 5px; /* Adjust spacing */
+      }
+
+      .patients .card button {
+        width: 100%;
+        margin-top: auto; /* Push button to the bottom */
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 10px;
+        background: transparent;
+        border: 1px solid #FF4F5B;
+        margin-top: 10px; /* Add margin between buttons */
+      }
+
+      .patients .card button:hover {
+        background: #FF4F5B;
+        color: #fff;
+        transition: 0.5s;
+      }
+
+    /* Additional styles for search bar */
+    .search-bar {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .search-bar input {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-bar button {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #f3f3f3;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #ddd;
+    }
+    .main-top h1 {
+        margin-bottom: 20px;
+        text-align: center; /* Add spacing */
+      }
+    /* Define breakpoints for responsive design */
+    @media screen and (max-width: 768px) {
+        nav {
+            width: 90px; /* Adjust width for smaller screens */
+        }
+    
+        nav:hover {
+            width: 100%; /* Take up the entire width of the screen when hovered */
+        }
+    
+        .logo img {
+            width: 35px; /* Decrease logo size */
+            height: 35px; /* Decrease logo size */
+        }
+    
+        .logo span {
+            font-size: 14px; /* Decrease font size */
+        }
+    
+        .nav-item {
+            margin-left: 5px; /* Adjust spacing */
+        }
+    
+        .main {
+            padding: 10px; /* Adjust padding */
+        }
+    
+        .main-top i {
+            margin: 5px; /* Adjust margin */
+        }
+    
+        .patients {
+            flex-direction: column; /* Change flex direction to column */
+        }
+    
+        .patients .card {
+            width: 90%; /* Set card width to full for smaller screens */
+        }
+    }
+    
+    /* Style for Add Patient Button */
+    .btn {
+        display: block;
+        margin: 1rem auto; /* Center the button horizontally */
+        padding: 0.2rem 1rem; /* Reduce padding to make the button smaller */
+        border-radius: 2rem; /* Reduce border radius */
+        background: #FF4F5B;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        font-size: 1.2rem; /* Reduce font size */
+      }
+      
+      .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: #444;
+        clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+        transition: .3s linear;
+      }
+      
+      .btn:hover::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+
+      /* Scroll bar styles */
+html::-webkit-scrollbar {
+    width: 1.3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #FF4F5B;
+}

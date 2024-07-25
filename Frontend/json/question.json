@@ -1,0 +1,132 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "text": "Have you been in close contact with a person diagnosed with TB?",
+        "options": ["Yes", "No", "Not Sure"],
+        "next_question": {
+          "Yes": 2,
+          "No": 5,
+          "Not Sure": 5
+        }
+      },
+      {
+        "id": 2,
+        "text": "Have you experienced any persistent cough for more than 2 weeks?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 3,
+          "No": 4
+        }
+      },
+      {
+        "id": 3,
+        "text": "Have you noticed any weight loss, lethargy or weakness?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 4,
+          "No": 5
+        }
+      },
+      {
+        "id": 4,
+        "text": "Have you ever taken a medicine that turned your urine orange-red?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 5,
+          "No": 6
+        }
+      },
+      {
+        "id": 5,
+        "text": "Does anyone in your family also have a cough?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 6,
+          "No": 7
+        }
+      },
+      {
+        "id": 6,
+        "text": "Have you ever had a blood or sputum test?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 7,
+          "No": 8
+        }
+      },
+      {
+        "id": 7,
+        "text": "Do you know that TB can be cured?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 8,
+          "No": 9
+        }
+      },
+      {
+        "id": 8,
+        "text": "Do you know that other people in your house can contract TB from you?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 9,
+          "No": 10
+        }
+      },
+      {
+        "id": 9,
+        "text": "Are you or anyone in your family a chronic smoker or alcoholic?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 10,
+          "No": 11
+        }
+      },
+      {
+        "id": 10,
+        "text": "Do you use wooden chulahs/other smoke generating cooking methods/hookah at your home?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 11,
+          "No": 12
+        }
+      },
+      {
+        "id": 11,
+        "text": "Are you aware of the harmful effects of smoking and alcohol consumption?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 12,
+          "No": 13
+        }
+      },
+      {
+        "id": 12,
+        "text": "Do you know about the Eat Right toolkit and healthy eating habits?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 13,
+          "No": 14
+        }
+      },
+      {
+        "id": 13,
+        "text": "Are you willing to volunteer for community engagement activities for TB awareness?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": 14,
+          "No": 14
+        }
+      },
+      {
+        "id": 14,
+        "text": "Are you ready to nominate yourself as a member of the Jan Arogya Samitis?",
+        "options": ["Yes", "No"],
+        "next_question": {
+          "Yes": -1,
+          "No": -1
+        }
+      }
+    ]
+  }
+  
